@@ -12,15 +12,21 @@ namespace Robots_Dinosaurs
         public Herd warHerd = new Herd();
         public void StartFight()
         {
-            //warBots initiate fight 
-            while(warBots.robotOne.health >= 0 && warHerd.dinoOne.health >= 0)
+            if (warBots.robotOne.health >= 0 || warHerd.dinoOne.health >= 0)
             {
-                warBots.robotOne.RobotCharge();
-                warHerd.dinoOne.DinoCharge();
+                warBots.robotOne.RobotAttack();
+                warHerd.dinoOne.DinoAttack();
+            }
+            else if(warBots.robotOne.health == 0)
+            {
+                warBots.robotTwo.RobotAttack();
+            }
+            else if (warHerd.dinoOne.health == 0)
+            {
+                warHerd.dinoTwo.DinoAttack();
             }
 
-        }
 
-        // think of fist example. when one opponent dies, the next opponent comes to finish him off
+        }
     }
 }

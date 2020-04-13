@@ -40,6 +40,7 @@ namespace Robots_Dinosaurs
                 health = battleHealth;
                 Console.WriteLine("Dino Energy level " + newEnergy.ToString());
                 Console.WriteLine("Dino Attack Power " + newAttackPower.ToString());
+                Console.WriteLine("Dino Health level " + health.ToString());
             }
             else
             {

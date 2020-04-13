@@ -29,7 +29,7 @@ namespace Robots_Dinosaurs
         }
 
         //Member methods
-        public void RobotCharge() // Do I have to name this differently? Or can dino have it's own Charge too?
+        public void RobotCharge()
         {
             if(powerLevel > 10 )
             {
@@ -56,7 +56,7 @@ namespace Robots_Dinosaurs
             //make a random number between attack power - that number against herd.dinosaur.health
         }
 
-        public void RobotAttack()
+        public void RobotAttack()//two objects passed in.
         {
             if (health > 0)
             {
