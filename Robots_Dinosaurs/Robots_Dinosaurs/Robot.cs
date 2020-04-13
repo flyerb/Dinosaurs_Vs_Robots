@@ -31,18 +31,26 @@ namespace Robots_Dinosaurs
         //Member methods
    
         // can attack will subtract attack power from powerlevel and will lower attack power by 10 - if power level reaches 0- cant attack
-        public double Charge()
+        public void RobotCharge() // Do I have to name this differently? Or can dino have it's own Charge too?
         {
-            if(powerLevel > 0 )
+            if(powerLevel > 10 )
             {
                 //attackPower - Dinosaur.health; how do I pick a specific dino?
-                double depeltedPower = powerLevel - attackPower;
-                return depeltedPower;
+                double newPowerLevel = powerLevel - 50;
+                powerLevel = newPowerLevel;
+                double newAttackPower = attackPower - 2;
+                attackPower = newAttackPower;
+                //double depeltedPower = powerLevel - attackPower;
+                //attackPower = depeltedPower;
+                Console.WriteLine("Robot" + newPowerLevel.ToString());
+                Console.WriteLine("Robot" + newAttackPower.ToString());
+
+
             }
             else
             {
                 Console.WriteLine("To tired to fight back :(");
-                return 0;
+                
             }
             
 
@@ -50,11 +58,11 @@ namespace Robots_Dinosaurs
             //make a random number between attack power - that number against herd.dinosaur.health
         }
 
-        public void Attack()
+        public void RobotAttack()
         {
-            if (health > 0 && powerLevel > 0)
+            if (health > 0)
             {
-                Charge();
+                RobotCharge();
             }
             else
             {

@@ -8,17 +8,30 @@ namespace Robots_Dinosaurs
 {
     class Fleet
     {
+        public Robot robotOne = new Robot("Cylon", 40);
+        public Robot robotTwo = new Robot("Bender", 20);
+        public Robot robotThree = new Robot("Wall-E", 10);
+
         //List<Robot> RobotFleet = new List<Robot>();
 
-        
-        Robot robotTwo = new Robot("Bender", 20);
-        Robot robotThree = new Robot("Wall-E", 10);
 
-        
         //methods  - 1) A way to be chosen for battle? An array of Robots  R-index[0] fights D-index [0]? 
 
         // When all robots are dead C.WL("Dinosaurs win")
+
+        //while robotOne still has health attack 
+        public void RobotQue()
+        {
+            while(robotOne.health > 0)
+            {
+                robotOne.RobotAttack();
+            }
+        }
+
     }
+    
+
+   
 
       
 }

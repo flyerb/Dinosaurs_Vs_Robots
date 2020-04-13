@@ -30,7 +30,37 @@ namespace Robots_Dinosaurs
 
         //member methods
 
-        // can attack / be attacked / if health or energy = 0, they die
+        public void DinoCharge() 
+        {
+            if (energy > 0)
+            {
+                double newEnergy = energy - 50;
+                energy = newEnergy;
+                double newAttackPower = attackPower - 2;
+                attackPower = newAttackPower;
+                Console.WriteLine("Dino" + newEnergy.ToString());
+                Console.WriteLine("Dino" + newAttackPower.ToString());
+                //attackPower - Robot.health; how do I pick a specific Robot?
+                
+            }
+            else
+            {
+                Console.WriteLine("To tired to fight back :(");
+            }
+        }
+
+        public void DinoAttack()
+        {
+            if (health > 0 && energy > 0)
+            {
+                DinoCharge();
+            }
+            else
+            {
+                Console.WriteLine("Dino is dead.");
+            }
+        }
+        
 
     }
 }

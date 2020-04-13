@@ -10,10 +10,7 @@ namespace Robots_Dinosaurs
     {
         static void Main(string[] args)
         {
-            // Simulation/run example from video
 
-            Robot robotOne = new Robot("Cylon", 40);
-            robotOne.Attack();
             Battlefield battlefield = new Battlefield();
             battlefield.StartFight();
 
