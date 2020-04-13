@@ -8,8 +8,6 @@ namespace Robots_Dinosaurs
 {
     class Dinosaur
     {
-        // type, health, energy, and attack power
-
         //member variables
 
         public string type;
@@ -38,20 +36,22 @@ namespace Robots_Dinosaurs
                 energy = newEnergy;
                 double newAttackPower = attackPower - 2;
                 attackPower = newAttackPower;
-                Console.WriteLine("Dino" + newEnergy.ToString());
-                Console.WriteLine("Dino" + newAttackPower.ToString());
-                //attackPower - Robot.health; how do I pick a specific Robot?
-                
+                double battleHealth = health - 10;
+                health = battleHealth;
+                Console.WriteLine("Dino Energy level " + newEnergy.ToString());
+                Console.WriteLine("Dino Attack Power " + newAttackPower.ToString());
             }
             else
             {
-                Console.WriteLine("To tired to fight back :(");
+                double battleHealth = health - 5;
+                health = battleHealth;
+                Console.WriteLine("Dino too tired to fight back :(");
             }
         }
 
         public void DinoAttack()
         {
-            if (health > 0 && energy > 0)
+            if (health > 0)
             {
                 DinoCharge();
             }

@@ -29,27 +29,25 @@ namespace Robots_Dinosaurs
         }
 
         //Member methods
-   
-        // can attack will subtract attack power from powerlevel and will lower attack power by 10 - if power level reaches 0- cant attack
         public void RobotCharge() // Do I have to name this differently? Or can dino have it's own Charge too?
         {
             if(powerLevel > 10 )
             {
-                //attackPower - Dinosaur.health; how do I pick a specific dino?
                 double newPowerLevel = powerLevel - 50;
                 powerLevel = newPowerLevel;
                 double newAttackPower = attackPower - 2;
                 attackPower = newAttackPower;
-                //double depeltedPower = powerLevel - attackPower;
-                //attackPower = depeltedPower;
-                Console.WriteLine("Robot" + newPowerLevel.ToString());
-                Console.WriteLine("Robot" + newAttackPower.ToString());
-
-
+                double battleHealth = health - 45;
+                health = battleHealth;
+                Console.WriteLine("Robot Power Level " + newPowerLevel.ToString());
+                Console.WriteLine("Robot Attack power " + newAttackPower.ToString());
+                Console.WriteLine("Robot health is " + battleHealth.ToString());
             }
             else
             {
-                Console.WriteLine("To tired to fight back :(");
+                double battleHealth = health - 10;
+                health = battleHealth;
+                Console.WriteLine("Robot too tired to fight back :(");
                 
             }
             
