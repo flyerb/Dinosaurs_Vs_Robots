@@ -10,9 +10,16 @@ namespace Robots_Dinosaurs
     {
         static void Main(string[] args)
         {
-            Robot Robot1 = new Robot("Cylon", "Blaster Rifle", 40);
-            Robot Robot2 = new Robot("Bender", "Broken Bottle", 20);
-            Robot Robot3 = new Robot("Wall-E", "Laser", 10);
+            // Simulation/run example from video
+
+            Robot robotOne = new Robot("Cylon", 40);
+            robotOne.Attack();
+            Battlefield battlefield = new Battlefield();
+            battlefield.StartFight();
+
+            Console.ReadLine();
+            
+
         }
     }
 }

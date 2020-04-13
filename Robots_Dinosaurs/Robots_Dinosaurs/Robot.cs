@@ -15,49 +15,50 @@ namespace Robots_Dinosaurs
         public string name;
         public double health;
         public double powerLevel;
-        public string weapon;
+        public Weapon weapon; 
         public double attackPower;
 
         //Ctor
-        public Robot(string name, string weapon, double attackPower)
+        public Robot(string name, double attackPower)
         {
             this.name = name;
             health = 100;
             powerLevel = 100;
-            this.weapon = weapon;
+            weapon = new Weapon();
             this.attackPower = attackPower;
         }
 
         //Member methods
-
-        // 1) A way to be chosen for battle? An array of dino/Robots? index[0] fights index [0]? Method for fleet/herd?
-
-        // 2)can attack   3) be attacked   4) if power level or health = 0 they die    
-
-        // can attack will subtract attack power from powerlevel and affects their attack power
-        public double Attack()
+   
+        // can attack will subtract attack power from powerlevel and will lower attack power by 10 - if power level reaches 0- cant attack
+        public double Charge()
         {
-            return attackPower - powerLevel;
-        }
-
-        //Subtract health from a dinosaur after an attack
-
-        public void SuccessfulAttack()
-        {
-            //after robot.attack - dinosaur.health....
-        }
-
-        //while loop. While health or power level > 0 Attack() when 0 C.WL "name" is dead
-
-        public void StillFight()
-        {
-            if (health > 0 && powerLevel > 0)
+            if(powerLevel > 0 )
             {
-                // return to fight
+                //attackPower - Dinosaur.health; how do I pick a specific dino?
+                double depeltedPower = powerLevel - attackPower;
+                return depeltedPower;
             }
             else
             {
-                Console.WriteLine(" Robot name is dead.");
+                Console.WriteLine("To tired to fight back :(");
+                return 0;
+            }
+            
+
+           
+            //make a random number between attack power - that number against herd.dinosaur.health
+        }
+
+        public void Attack()
+        {
+            if (health > 0 && powerLevel > 0)
+            {
+                Charge();
+            }
+            else
+            {
+                Console.WriteLine("Robot is dead.");
             }
         }
         

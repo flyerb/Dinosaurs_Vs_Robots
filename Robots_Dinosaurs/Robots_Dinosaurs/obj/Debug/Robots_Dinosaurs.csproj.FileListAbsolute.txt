@@ -1,0 +1,6 @@
+C:\Users\netra\Desktop\devCode\Week_01\WeekOneProjects\Dinosaurs_Vs_Robots\Robots_Dinosaurs\Robots_Dinosaurs\obj\Debug\Robots_Dinosaurs.csprojAssemblyReference.cache
+C:\Users\netra\Desktop\devCode\Week_01\WeekOneProjects\Dinosaurs_Vs_Robots\Robots_Dinosaurs\Robots_Dinosaurs\bin\Debug\Robots_Dinosaurs.exe.config
+C:\Users\netra\Desktop\devCode\Week_01\WeekOneProjects\Dinosaurs_Vs_Robots\Robots_Dinosaurs\Robots_Dinosaurs\bin\Debug\Robots_Dinosaurs.exe
+C:\Users\netra\Desktop\devCode\Week_01\WeekOneProjects\Dinosaurs_Vs_Robots\Robots_Dinosaurs\Robots_Dinosaurs\bin\Debug\Robots_Dinosaurs.pdb
+C:\Users\netra\Desktop\devCode\Week_01\WeekOneProjects\Dinosaurs_Vs_Robots\Robots_Dinosaurs\Robots_Dinosaurs\obj\Debug\Robots_Dinosaurs.exe
+C:\Users\netra\Desktop\devCode\Week_01\WeekOneProjects\Dinosaurs_Vs_Robots\Robots_Dinosaurs\Robots_Dinosaurs\obj\Debug\Robots_Dinosaurs.pdb

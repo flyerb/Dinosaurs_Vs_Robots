@@ -8,5 +8,10 @@ namespace Robots_Dinosaurs
 {
     class Weapon
     {
+        //variables
+
+        //ctor
+
+        //methods
     }
 }
