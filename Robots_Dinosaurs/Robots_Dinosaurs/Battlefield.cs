@@ -12,19 +12,35 @@ namespace Robots_Dinosaurs
         public Herd warHerd = new Herd();
         public void StartFight()
         {
-            if (warBots.robotOne.health >= 0 || warHerd.dinoOne.health >= 0)
-            {
-                warBots.robotOne.RobotAttack();
-                warHerd.dinoOne.DinoAttack();
-            }
-            else if(warBots.robotOne.health == 0)
-            {
-                warBots.robotTwo.RobotAttack();
-            }
-            else if (warHerd.dinoOne.health == 0)
-            {
-                warHerd.dinoTwo.DinoAttack();
-            }
+            
+            //Optionn one
+            //while (warBots.robotFleet[0].health > 0 && warHerd.dinoOne.health >=0)
+            //{
+            //    warBots.robotFleet[0].RobotAttack();
+            //    warHerd.dinoOne.DinoAttack();
+            //    Console.Write("Is the Robot dead? Y/N");
+            //    string userinput = Console.ReadLine();
+            //    if(userinput == "Y")
+            //    {
+            //        warBots.robotFleet[1].RobotAttack();
+            //    }
+            //}
+
+
+            //Option Two without Robot List
+            //while (warBots.robotOne.health >= 0 && warHerd.dinoOne.health >= 0)
+            //{
+            //    warBots.robotOne.RobotAttack();
+            //    warHerd.dinoOne.DinoAttack();
+            //}
+            //else if(warBots.robotOne.health == 0)
+            //{
+            //    warBots.robotTwo.RobotAttack();
+            //}
+            //else if (warHerd.dinoOne.health == 0)
+            //{
+            //    warHerd.dinoTwo.DinoAttack();
+            //}
 
 
         }
